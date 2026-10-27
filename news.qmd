@@ -1,6 +1,11 @@
 ---
+description: "GIBI-LAB 课题组动态。新闻、活动和公告待确认后发布。"
 title: "News"
 subtitle: "课题组动态"
 ---
 
 {{< include content/news.md >}}
+
+::: {.content-maintenance}
+[编辑本页内容](https://github.com/GIBI-LAB/GIBI-LAB.github.io/edit/main/content/news.md) · [反馈问题](https://github.com/GIBI-LAB/GIBI-LAB.github.io/issues/new/choose)
+:::

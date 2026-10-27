@@ -1,6 +1,11 @@
 ---
+description: "GIBI-LAB 团队成员。负责人及成员信息待确认后发布。"
 title: "People"
 subtitle: "团队成员"
 ---
 
 {{< include content/people.md >}}
+
+::: {.content-maintenance}
+[编辑本页内容](https://github.com/GIBI-LAB/GIBI-LAB.github.io/edit/main/content/people.md) · [反馈问题](https://github.com/GIBI-LAB/GIBI-LAB.github.io/issues/new/choose)
+:::

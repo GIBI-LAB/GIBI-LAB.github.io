@@ -1,11 +1,18 @@
 project:
   type: website
   output-dir: _site
+  resources:
+    - assets/
   render:
     - "*.qmd"
 website:
   title: "GIBI LAB"
   site-url: https://gibi-lab.github.io
+  favicon: assets/favicon.svg
+  open-graph: true
+  back-to-top-navigation: true
+  repo-url: https://github.com/GIBI-LAB/GIBI-LAB.github.io
+  repo-actions: [issue]
   description: "GIBI-LAB 课题组网站 · 内容筹备中"
   navbar:
     background: light

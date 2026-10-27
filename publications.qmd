@@ -1,6 +1,11 @@
 ---
+description: "GIBI-LAB 学术成果。经核实的论文列表待补充。"
 title: "Publications"
 subtitle: "论文与学术成果"
 ---
 
 {{< include content/publications.md >}}
+
+::: {.content-maintenance}
+[编辑本页内容](https://github.com/GIBI-LAB/GIBI-LAB.github.io/edit/main/content/publications.md) · [反馈问题](https://github.com/GIBI-LAB/GIBI-LAB.github.io/issues/new/choose)
+:::

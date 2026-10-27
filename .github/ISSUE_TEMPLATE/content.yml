@@ -1,0 +1,25 @@
+name: 更新网站内容
+description: 提供经确认的课题组资料或修正现有内容
+title: "[内容更新] "
+body:
+  - type: dropdown
+    id: page
+    attributes:
+      label: 更新栏目
+      options: [About, Research, People, Publications, News]
+    validations:
+      required: true
+  - type: textarea
+    id: content
+    attributes:
+      label: 需要发布或修改的内容
+      description: 请勿提交私人联系方式或未获授权的照片。
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: 核实来源
+      description: 例如论文 DOI、机构主页或已经确认的说明。
+    validations:
+      required: true

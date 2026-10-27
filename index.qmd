@@ -1,4 +1,5 @@
 ---
+description: "GIBI-LAB 课题组网站：研究方向、团队成员、学术成果与动态。正式资料正在整理中。"
 title: "GIBI LAB"
 pagetitle: "GIBI LAB · Home"
 title-block-banner: false
@@ -56,3 +57,7 @@ A space for questions, ideas, and discovery.
 {{< include content/news.md >}}
 
 [查看全部动态 →](news.qmd)
+
+::: {.content-maintenance}
+[编辑本页内容](https://github.com/GIBI-LAB/GIBI-LAB.github.io/edit/main/content/about.md) · [反馈问题](https://github.com/GIBI-LAB/GIBI-LAB.github.io/issues/new/choose)
+:::

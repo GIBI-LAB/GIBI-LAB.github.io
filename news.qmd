@@ -1,0 +1,6 @@
+---
+title: "News"
+subtitle: "课题组动态"
+---
+
+{{< include content/news.md >}}

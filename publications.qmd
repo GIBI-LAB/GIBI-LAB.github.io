@@ -1,0 +1,6 @@
+---
+title: "Publications"
+subtitle: "论文与学术成果"
+---
+
+{{< include content/publications.md >}}

@@ -1,0 +1,37 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+website:
+  title: "GIBI LAB"
+  site-url: https://gibi-lab.github.io
+  description: "GIBI-LAB 课题组网站 · 内容筹备中"
+  navbar:
+    background: light
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: people.qmd
+        text: People
+      - href: publications.qmd
+        text: Publications
+      - href: news.qmd
+        text: News
+    right:
+      - icon: github
+        href: https://github.com/GIBI-LAB
+        aria-label: GitHub organization
+  page-footer:
+    left: "GIBI-LAB · 课题组网站"
+    right: "内容筹备中 / Website in preparation"
+  search: true
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    lang: zh-CN
+    link-external-newwindow: true

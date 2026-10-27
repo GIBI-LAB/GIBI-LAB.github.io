@@ -1,0 +1,58 @@
+---
+title: "GIBI LAB"
+pagetitle: "GIBI LAB · Home"
+title-block-banner: false
+---
+
+::: {.hero}
+::: {.eyebrow}
+WELCOME TO GIBI LAB
+:::
+
+# 探索，从这里开始。 {.hero-title}
+
+::: {.hero-subtitle}
+A space for questions, ideas, and discovery.
+:::
+
+课题组网站正在筹备中。研究方向、团队介绍与学术成果将依据经确认的资料陆续补充。
+
+[探索研究方向 →](research.qmd){.hero-link}
+:::
+
+::: {.section-heading}
+## About the lab
+关于课题组
+:::
+
+{{< include content/about.md >}}
+
+::: {.chapter-grid}
+::: {.chapter}
+[01 / Research](research.qmd){.chapter-link}
+
+### 研究方向
+
+了解我们关注的问题、研究项目与开放资源。
+:::
+::: {.chapter}
+[02 / People](people.qmd){.chapter-link}
+
+### 团队成员
+
+认识课题组成员与合作伙伴。
+:::
+::: {.chapter}
+[03 / Publications](publications.qmd){.chapter-link}
+
+### 学术成果
+
+查阅经确认的论文与相关材料。
+:::
+:::
+
+## Latest news
+
+{{< include content/news.md >}}
+
+[查看全部动态 →](news.qmd)

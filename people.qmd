@@ -1,0 +1,6 @@
+---
+title: "People"
+subtitle: "团队成员"
+---
+
+{{< include content/people.md >}}

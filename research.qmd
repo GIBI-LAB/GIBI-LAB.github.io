@@ -1,0 +1,6 @@
+---
+title: "Research"
+subtitle: "研究方向与项目"
+---
+
+{{< include content/research.md >}}

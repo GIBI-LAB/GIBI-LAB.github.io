@@ -19,7 +19,7 @@ Spatial Imaging · Color Science · Imaging Evaluation
 :::
 :::
 ::: {.lab-portrait}
-![Abstract illustration of spatial geometry and color; not research data.](assets/lab-study.svg)
+![](assets/lab-study.svg){fig-alt="Abstract spatial geometry and color illustration, not research data."}
 
 Abstract illustration of spatial geometry and color; not research data.
 :::

@@ -19,7 +19,7 @@ description: "空间影像 · 色彩科学 · 影像评测 · GIBI-LAB"
 :::
 :::
 ::: {.lab-portrait}
-![空间几何与色彩的抽象示意图，非实验数据。](assets/lab-study.svg)
+![](assets/lab-study.svg){fig-alt="空间几何与色彩的抽象示意图，非实验数据。"}
 
 空间几何与色彩的抽象示意图，非实验数据。
 :::

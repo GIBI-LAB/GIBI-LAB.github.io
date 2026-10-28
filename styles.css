@@ -33,3 +33,5 @@ main a,main p,main li{overflow-wrap:anywhere}img,svg{max-width:100%}a:focus-visi
 @media print{.navbar,.nav-footer,.content-maintenance,#quarto-back-to-top{display:none!important}body{background:white;color:black}.chapter-grid{display:block}.chapter{break-inside:avoid}a{color:inherit}}
 /* Override Bootstrap's loading-placeholder class for editorial empty states. */
 .placeholder{display:block;opacity:1;cursor:auto;min-height:0;vertical-align:baseline}
+main,.lab-bio,.lab-intro,.chapter-grid,.chapter{min-width:0}
+@media(max-width:767px){.lab-intro{grid-template-columns:minmax(0,1fr)}#quarto-content{width:100%}}

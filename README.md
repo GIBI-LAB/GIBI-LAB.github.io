@@ -25,13 +25,17 @@ Quarto 学术静态网站，使用 GitHub Actions 构建并部署到 GitHub Page
 安装 Quarto 1.10.19：https://quarto.org/docs/get-started/
 
 ```sh
+python3 scripts/prepare_assets.py
 quarto preview
 ```
 
-构建和检查：
+仅中文构建和检查（完整双语预览见文末）：
 
 ```sh
+python3 scripts/prepare_assets.py
 quarto render
+quarto render en
+python3 scripts/assemble_languages.py
 python3 scripts/check_links.py
 ```
 

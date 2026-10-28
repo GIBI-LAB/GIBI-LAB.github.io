@@ -31,3 +31,5 @@ main a,main p,main li{overflow-wrap:anywhere}img,svg{max-width:100%}a:focus-visi
 @media(max-width:767px){main{padding-top:1.5rem}.lab-intro{grid-template-columns:1fr;gap:1rem}.lab-intro h1{font-size:2.5rem}.lab-portrait{display:none}.chapter-grid{grid-template-columns:1fr;gap:.75rem}.chapter{padding:1rem}.navbar{padding:.5rem 0}h1{font-size:2.1rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation:none!important;transition:none!important}}
 @media print{.navbar,.nav-footer,.content-maintenance,#quarto-back-to-top{display:none!important}body{background:white;color:black}.chapter-grid{display:block}.chapter{break-inside:avoid}a{color:inherit}}
+/* Override Bootstrap's loading-placeholder class for editorial empty states. */
+.placeholder{display:block;opacity:1;cursor:auto;min-height:0;vertical-align:baseline}

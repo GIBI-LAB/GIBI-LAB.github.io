@@ -12,7 +12,8 @@ website:
   back-to-top-navigation: true
   description: "GIBI-LAB 课题组网站 · 内容筹备中"
   navbar:
-    background: light
+    background: dark
+    foreground: light
     left:
       - text: 项目
         menu:
@@ -42,7 +43,7 @@ website:
   search: true
 format:
   html:
-    theme: cosmo
+    theme: lux
     css: assets/styles.css
     include-in-header:
       text: '<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">'

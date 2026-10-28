@@ -80,4 +80,4 @@ python3 -m http.server 8000 --directory _site
 
 ## 当前视觉风格
 
-当前采用 al-folio 风格的独立 Quarto 实现：白底、紫色链接、轻量标题、简介与抽象示意图并列、动态 / 项目 / 学术成果分区。并非安装 Jekyll 的 al-folio 主题；原有双语构建和内容文件保持可用。参考：https://alshedivat.github.io/al-folio/ 。没有复制对方照片、示例论文或代码，抽象插图为本站原创 SVG，并明确标注为非实验数据。
+中英文站均使用 Quarto 内置的 Bootswatch Lux 主题（`theme: lux`），配深色导航。保留主题自身的字体、标题、按钮和菜单样式；`styles.css` 仅补充课题组布局、中文可读性及响应式样式。参考：https://bootswatch.com/lux/ 。原有 al-folio 风格版本可通过 Git 历史恢复。抽象示意图为本站原创 SVG，并非实验数据。

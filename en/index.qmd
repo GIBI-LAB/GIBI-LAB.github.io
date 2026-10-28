@@ -1,52 +1,62 @@
 ---
 title: "GIBI LAB"
-description: "GIBI-LAB: projects, people, research, publications, and lab information."
+pagetitle: "GIBI LAB · Home"
+description: "Spatial Imaging · Color Science · Imaging Evaluation · GIBI-LAB"
 ---
 
-::: {.hero}
-::: {.eyebrow}
-WELCOME TO GIBI LAB
+:::: {.lab-intro}
+::: {.lab-bio}
+# **GIBI** LAB
+
+::: {.lab-subtitle}
+Spatial Imaging · Color Science · Imaging Evaluation
 :::
-
-# Discovery starts here. {.hero-title}
-
-::: {.hero-subtitle}
-A space for questions, ideas, and discovery.
-:::
-
-Our website is in preparation. Research directions, team profiles, and publications will be added as information is verified.
-
-[Explore our research →](research.qmd){.hero-link}
-:::
-
-## About the lab
 
 {{< include content/about.md >}}
 
-[More about the lab →](about.qmd)
-
-## Projects
-
-::: {.chapter-grid}
-::: {.chapter}
-[01 / Spatial Imaging](spatial-imaging.qmd){.chapter-link}
-
-Project details coming soon.
-:::
-::: {.chapter}
-[02 / Color Science](color-science.qmd){.chapter-link}
-
-Project details coming soon.
-:::
-::: {.chapter}
-[03 / Imaging Evaluation](imaging-evaluation.qmd){.chapter-link}
-
-Project details coming soon.
+::: {.lab-links}
+[About the lab](about.qmd) [Meet the team](people.qmd) [GitHub](https://github.com/GIBI-LAB)
 :::
 :::
+::: {.lab-portrait}
+![Abstract illustration of spatial geometry and color; not research data.](assets/lab-study.svg)
 
-## Latest news
+Abstract illustration of spatial geometry and color; not research data.
+:::
+::::
+
+## news
 
 {{< include content/news.md >}}
 
 [All news →](news.qmd)
+
+## projects
+
+:::: {.chapter-grid}
+::: {.chapter}
+[Spatial Imaging →](spatial-imaging.qmd){.chapter-link}
+
+Project details coming soon.
+:::
+::: {.chapter}
+[Color Science →](color-science.qmd){.chapter-link}
+
+Project details coming soon.
+:::
+::: {.chapter}
+[Imaging Evaluation →](imaging-evaluation.qmd){.chapter-link}
+
+Project details coming soon.
+:::
+::::
+
+## publications
+
+{{< include content/publications.md >}}
+
+[All publications →](publications.qmd)
+
+::: {.content-maintenance}
+[Edit lab introduction](https://github.com/GIBI-LAB/GIBI-LAB.github.io/edit/main/en/content/about.md)
+:::

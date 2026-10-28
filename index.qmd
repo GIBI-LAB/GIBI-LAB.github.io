@@ -1,53 +1,29 @@
 ---
-description: "GIBI-LAB 课题组网站：研究方向、团队成员、学术成果与动态。正式资料正在整理中。"
 title: "GIBI LAB"
 pagetitle: "GIBI LAB · 首页"
-title-block-banner: false
+description: "空间影像 · 色彩科学 · 影像评测 · GIBI-LAB"
 ---
 
-::: {.hero}
-::: {.eyebrow}
-欢迎来到 GIBI LAB
-:::
+:::: {.lab-intro}
+::: {.lab-bio}
+# **GIBI** LAB
 
-# 探索，从这里开始。 {.hero-title}
-
-::: {.hero-subtitle}
-让问题、想法与发现，在这里相遇。
-:::
-
-课题组网站正在筹备中。研究方向、团队介绍与学术成果将依据经确认的资料陆续补充。
-
-[探索研究方向 →](research.qmd){.hero-link}
-:::
-
-::: {.section-heading}
-## 关于课题组
+::: {.lab-subtitle}
+空间影像 · 色彩科学 · 影像评测
 :::
 
 {{< include content/about.md >}}
 
-[了解课题组 →](about.qmd)
-
-## 项目
-
-::: {.chapter-grid}
-::: {.chapter}
-[01 / 空间影像](spatial-imaging.qmd){.chapter-link}
-
-项目资料待补充。
-:::
-::: {.chapter}
-[02 / 色彩科学](color-science.qmd){.chapter-link}
-
-项目资料待补充。
-:::
-::: {.chapter}
-[03 / 影像评测](imaging-evaluation.qmd){.chapter-link}
-
-项目资料待补充。
+::: {.lab-links}
+[了解课题组](about.qmd) [团队成员](people.qmd) [GitHub](https://github.com/GIBI-LAB)
 :::
 :::
+::: {.lab-portrait}
+![空间几何与色彩的抽象示意图，非实验数据。](assets/lab-study.svg)
+
+空间几何与色彩的抽象示意图，非实验数据。
+:::
+::::
 
 ## 最新动态
 
@@ -55,6 +31,32 @@ title-block-banner: false
 
 [查看全部动态 →](news.qmd)
 
+## 项目
+
+:::: {.chapter-grid}
+::: {.chapter}
+[空间影像 →](spatial-imaging.qmd){.chapter-link}
+
+项目资料待补充。
+:::
+::: {.chapter}
+[色彩科学 →](color-science.qmd){.chapter-link}
+
+项目资料待补充。
+:::
+::: {.chapter}
+[影像评测 →](imaging-evaluation.qmd){.chapter-link}
+
+项目资料待补充。
+:::
+::::
+
+## 学术成果
+
+{{< include content/publications.md >}}
+
+[查看全部学术成果 →](publications.qmd)
+
 ::: {.content-maintenance}
-[编辑本页内容](https://github.com/GIBI-LAB/GIBI-LAB.github.io/edit/main/content/about.md) · [反馈问题](https://github.com/GIBI-LAB/GIBI-LAB.github.io/issues/new/choose)
+[编辑课题组介绍](https://github.com/GIBI-LAB/GIBI-LAB.github.io/edit/main/content/about.md)
 :::

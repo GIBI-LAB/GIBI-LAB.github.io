@@ -77,3 +77,7 @@ python3 -m http.server 8000 --directory _site
 ```
 
 浏览 http://localhost:8000。两种语言分别构建搜索索引，切换链接在构建时配对当前页面，无需 JavaScript。新增页面须同时创建中文和英文版本；缺少翻译页会阻止发布。两种语言共用根目录 `styles.css`，自动复制的样式文件无需手工编辑。
+
+## 当前视觉风格
+
+当前采用 al-folio 风格的独立 Quarto 实现：白底、紫色链接、轻量标题、简介与抽象示意图并列、动态 / 项目 / 学术成果分区。并非安装 Jekyll 的 al-folio 主题；原有双语构建和内容文件保持可用。参考：https://alshedivat.github.io/al-folio/ 。没有复制对方照片、示例论文或代码，抽象插图为本站原创 SVG，并明确标注为非实验数据。

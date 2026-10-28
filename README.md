@@ -54,3 +54,22 @@ python3 scripts/check_links.py
 网站提供自定义 404 页面、站内搜索、分享元数据和临时 G 字母图标（并非正式课题组标识）。布局支持窄屏、减少动态效果偏好及打印样式。
 
 每次构建检查内部页面、资源、锚点、页面标题、语言设置和图片 alt 属性；检查失败将阻止部署。外部链接不在此检查范围内。内容是否真实仍需人工核实。
+
+## 中英双语与导航
+
+顶部为 Project（空间影像 / 色彩科学 / 影像评测）、People、Research、Publication、介绍；英文站最后一项为 About。点击站名返回首页，News 保留在首页入口。
+
+中文源文件位于根目录和 `content/`；英文源文件位于 `en/` 和 `en/content/`。三个项目文件分别是 `spatial-imaging`、`color-science`、`imaging-evaluation`，介绍页为 `about.qmd`。更新真实资料时请同步两种语言。
+
+完整双语构建：
+
+```sh
+python3 scripts/prepare_assets.py
+quarto render
+quarto render en
+python3 scripts/assemble_languages.py
+python3 scripts/check_links.py
+python3 -m http.server 8000 --directory _site
+```
+
+浏览 http://localhost:8000。两种语言分别构建搜索索引，切换链接在构建时配对当前页面，无需 JavaScript。新增页面须同时创建中文和英文版本；缺少翻译页会阻止发布。两种语言共用根目录 `styles.css`，自动复制的样式文件无需手工编辑。

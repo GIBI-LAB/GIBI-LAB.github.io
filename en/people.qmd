@@ -1,0 +1,10 @@
+---
+title: "People"
+description: "People · GIBI-LAB"
+---
+
+{{< include content/people.md >}}
+
+::: {.content-maintenance}
+[Edit this content](https://github.com/GIBI-LAB/GIBI-LAB.github.io/edit/main/en/content/people.md) · [Report an issue](https://github.com/GIBI-LAB/GIBI-LAB.github.io/issues/new/choose)
+:::

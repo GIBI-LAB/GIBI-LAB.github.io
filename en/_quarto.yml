@@ -1,0 +1,51 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - assets/
+  render:
+    - "*.qmd"
+website:
+  title: "GIBI LAB"
+  site-url: https://gibi-lab.github.io/en
+  open-graph: true
+  back-to-top-navigation: true
+  description: "GIBI-LAB research group · Website in preparation"
+  navbar:
+    background: light
+    left:
+      - text: Project
+        menu:
+          - href: spatial-imaging.qmd
+            text: "Spatial Imaging"
+          - href: color-science.qmd
+            text: "Color Science"
+          - href: imaging-evaluation.qmd
+            text: "Imaging Evaluation"
+      - href: people.qmd
+        text: People
+      - href: research.qmd
+        text: Research
+      - href: publications.qmd
+        text: Publication
+      - href: about.qmd
+        text: "About"
+    right:
+      - href: /index.html
+        text: "中文"
+      - icon: github
+        href: https://github.com/GIBI-LAB
+        aria-label: GitHub organization
+  page-footer:
+    left: "GIBI-LAB"
+    right: "Website in preparation"
+  search: true
+format:
+  html:
+    theme: cosmo
+    css: assets/styles.css
+    include-in-header:
+      text: '<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">'
+    toc: false
+    lang: en
+    link-external-newwindow: true

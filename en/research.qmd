@@ -1,0 +1,10 @@
+---
+title: "Research"
+description: "Research · GIBI-LAB"
+---
+
+{{< include content/research.md >}}
+
+::: {.content-maintenance}
+[Edit this content](https://github.com/GIBI-LAB/GIBI-LAB.github.io/edit/main/en/content/research.md) · [Report an issue](https://github.com/GIBI-LAB/GIBI-LAB.github.io/issues/new/choose)
+:::

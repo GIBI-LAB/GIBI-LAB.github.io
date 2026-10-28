@@ -1,0 +1,52 @@
+---
+title: "GIBI LAB"
+description: "GIBI-LAB: projects, people, research, publications, and lab information."
+---
+
+::: {.hero}
+::: {.eyebrow}
+WELCOME TO GIBI LAB
+:::
+
+# Discovery starts here. {.hero-title}
+
+::: {.hero-subtitle}
+A space for questions, ideas, and discovery.
+:::
+
+Our website is in preparation. Research directions, team profiles, and publications will be added as information is verified.
+
+[Explore our research →](research.qmd){.hero-link}
+:::
+
+## About the lab
+
+{{< include content/about.md >}}
+
+[More about the lab →](about.qmd)
+
+## Projects
+
+::: {.chapter-grid}
+::: {.chapter}
+[01 / Spatial Imaging](spatial-imaging.qmd){.chapter-link}
+
+Project details coming soon.
+:::
+::: {.chapter}
+[02 / Color Science](color-science.qmd){.chapter-link}
+
+Project details coming soon.
+:::
+::: {.chapter}
+[03 / Imaging Evaluation](imaging-evaluation.qmd){.chapter-link}
+
+Project details coming soon.
+:::
+:::
+
+## Latest news
+
+{{< include content/news.md >}}
+
+[All news →](news.qmd)

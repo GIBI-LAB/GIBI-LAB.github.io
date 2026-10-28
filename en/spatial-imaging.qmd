@@ -1,0 +1,10 @@
+---
+title: "Spatial Imaging"
+description: "Spatial Imaging · GIBI-LAB"
+---
+
+{{< include content/spatial-imaging.md >}}
+
+::: {.content-maintenance}
+[Edit this content](https://github.com/GIBI-LAB/GIBI-LAB.github.io/edit/main/en/content/spatial-imaging.md) · [Report an issue](https://github.com/GIBI-LAB/GIBI-LAB.github.io/issues/new/choose)
+:::

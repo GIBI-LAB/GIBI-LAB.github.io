@@ -1,0 +1,10 @@
+---
+title: "News"
+description: "News · GIBI-LAB"
+---
+
+{{< include content/news.md >}}
+
+::: {.content-maintenance}
+[Edit this content](https://github.com/GIBI-LAB/GIBI-LAB.github.io/edit/main/en/content/news.md) · [Report an issue](https://github.com/GIBI-LAB/GIBI-LAB.github.io/issues/new/choose)
+:::

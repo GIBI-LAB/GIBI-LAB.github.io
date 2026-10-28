@@ -28,27 +28,25 @@ A space for questions, ideas, and discovery.
 
 {{< include content/about.md >}}
 
+[了解课题组 →](about.qmd)
+
+## Project
+
 ::: {.chapter-grid}
 ::: {.chapter}
-[01 / Research](research.qmd){.chapter-link}
+[01 / 空间影像](spatial-imaging.qmd){.chapter-link}
 
-### 研究方向
-
-了解我们关注的问题、研究项目与开放资源。
+项目资料待补充。
 :::
 ::: {.chapter}
-[02 / People](people.qmd){.chapter-link}
+[02 / 色彩科学](color-science.qmd){.chapter-link}
 
-### 团队成员
-
-认识课题组成员与合作伙伴。
+项目资料待补充。
 :::
 ::: {.chapter}
-[03 / Publications](publications.qmd){.chapter-link}
+[03 / 影像评测](imaging-evaluation.qmd){.chapter-link}
 
-### 学术成果
-
-查阅经确认的论文与相关材料。
+项目资料待补充。
 :::
 :::
 

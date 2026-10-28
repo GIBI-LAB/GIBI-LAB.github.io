@@ -1,0 +1,10 @@
+---
+title: "Color Science"
+description: "Color Science · GIBI-LAB"
+---
+
+{{< include content/color-science.md >}}
+
+::: {.content-maintenance}
+[Edit this content](https://github.com/GIBI-LAB/GIBI-LAB.github.io/edit/main/en/content/color-science.md) · [Report an issue](https://github.com/GIBI-LAB/GIBI-LAB.github.io/issues/new/choose)
+:::

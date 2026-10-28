@@ -1,0 +1,10 @@
+---
+title: "介绍"
+description: "介绍 · GIBI-LAB"
+---
+
+{{< include content/about.md >}}
+
+::: {.content-maintenance}
+[编辑本页内容](https://github.com/GIBI-LAB/GIBI-LAB.github.io/edit/main/content/about.md) · [反馈问题](https://github.com/GIBI-LAB/GIBI-LAB.github.io/issues/new/choose)
+:::

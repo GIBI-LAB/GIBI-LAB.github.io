@@ -1,0 +1,8 @@
+---
+title: "Page not found"
+search: false
+---
+
+The address may have changed. Use the navigation or search to find a page.
+
+[Return home](/en/index.html){.btn .btn-primary}

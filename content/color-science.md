@@ -1,5 +1,5 @@
 ::: {.eyebrow}
-PROJECT / COLOR SCIENCE
+项目 / 色彩科学
 :::
 
 ::: {.placeholder}

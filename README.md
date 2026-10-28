@@ -61,7 +61,7 @@ python3 scripts/check_links.py
 
 ## 中英双语与导航
 
-顶部为 Project（空间影像 / 色彩科学 / 影像评测）、People、Research、Publication、介绍；英文站最后一项为 About。点击站名返回首页，News 保留在首页入口。
+中文顶部为项目（空间影像 / 色彩科学 / 影像评测）、团队成员、研究方向、学术成果、介绍；英文站对应 Project、People、Research、Publication、About。点击站名返回首页，News 保留在首页入口。
 
 中文源文件位于根目录和 `content/`；英文源文件位于 `en/` 和 `en/content/`。三个项目文件分别是 `spatial-imaging`、`color-science`、`imaging-evaluation`，介绍页为 `about.qmd`。更新真实资料时请同步两种语言。
 

@@ -1,5 +1,5 @@
 ::: {.eyebrow}
-PROJECT / IMAGING EVALUATION
+项目 / 影像评测
 :::
 
 ::: {.placeholder}

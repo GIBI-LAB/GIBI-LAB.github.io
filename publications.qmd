@@ -1,6 +1,6 @@
 ---
 description: "GIBI-LAB 学术成果。经核实的论文列表待补充。"
-title: "Publication"
+title: "学术成果"
 subtitle: "论文与学术成果"
 ---
 

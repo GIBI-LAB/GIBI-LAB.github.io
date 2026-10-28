@@ -1,5 +1,5 @@
 ::: {.eyebrow}
-PROJECT / SPATIAL IMAGING
+项目 / 空间影像
 :::
 
 ::: {.placeholder}

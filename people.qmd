@@ -1,7 +1,6 @@
 ---
 description: "GIBI-LAB 团队成员。负责人及成员信息待确认后发布。"
-title: "People"
-subtitle: "团队成员"
+title: "团队成员"
 ---
 
 {{< include content/people.md >}}

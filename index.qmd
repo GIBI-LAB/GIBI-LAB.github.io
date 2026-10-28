@@ -1,19 +1,19 @@
 ---
 description: "GIBI-LAB 课题组网站：研究方向、团队成员、学术成果与动态。正式资料正在整理中。"
 title: "GIBI LAB"
-pagetitle: "GIBI LAB · Home"
+pagetitle: "GIBI LAB · 首页"
 title-block-banner: false
 ---
 
 ::: {.hero}
 ::: {.eyebrow}
-WELCOME TO GIBI LAB
+欢迎来到 GIBI LAB
 :::
 
 # 探索，从这里开始。 {.hero-title}
 
 ::: {.hero-subtitle}
-A space for questions, ideas, and discovery.
+让问题、想法与发现，在这里相遇。
 :::
 
 课题组网站正在筹备中。研究方向、团队介绍与学术成果将依据经确认的资料陆续补充。
@@ -22,15 +22,14 @@ A space for questions, ideas, and discovery.
 :::
 
 ::: {.section-heading}
-## About the lab
-关于课题组
+## 关于课题组
 :::
 
 {{< include content/about.md >}}
 
 [了解课题组 →](about.qmd)
 
-## Project
+## 项目
 
 ::: {.chapter-grid}
 ::: {.chapter}
@@ -50,7 +49,7 @@ A space for questions, ideas, and discovery.
 :::
 :::
 
-## Latest news
+## 最新动态
 
 {{< include content/news.md >}}
 

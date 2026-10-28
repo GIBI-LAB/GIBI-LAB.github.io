@@ -14,7 +14,7 @@ website:
   navbar:
     background: light
     left:
-      - text: Project
+      - text: 项目
         menu:
           - href: spatial-imaging.qmd
             text: "空间影像"
@@ -23,11 +23,11 @@ website:
           - href: imaging-evaluation.qmd
             text: "影像评测"
       - href: people.qmd
-        text: People
+        text: 团队成员
       - href: research.qmd
-        text: Research
+        text: 研究方向
       - href: publications.qmd
-        text: Publication
+        text: 学术成果
       - href: about.qmd
         text: "介绍"
     right:
@@ -35,7 +35,7 @@ website:
         text: "English"
       - icon: github
         href: https://github.com/GIBI-LAB
-        aria-label: GitHub organization
+        aria-label: GitHub 组织
   page-footer:
     left: "GIBI-LAB"
     right: "内容筹备中"

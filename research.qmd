@@ -1,6 +1,6 @@
 ---
 description: "GIBI-LAB 研究方向与项目。相关资料待确认后发布。"
-title: "Research"
+title: "研究方向"
 subtitle: "研究方向与项目"
 ---
 

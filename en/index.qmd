@@ -25,13 +25,13 @@ Abstract illustration of spatial geometry and color; not research data.
 :::
 ::::
 
-## news
+## News
 
 {{< include content/news.md >}}
 
 [All news →](news.qmd)
 
-## projects
+## Projects
 
 :::: {.chapter-grid}
 ::: {.chapter}
@@ -51,7 +51,7 @@ Project details coming soon.
 :::
 ::::
 
-## publications
+## Publications
 
 {{< include content/publications.md >}}
 

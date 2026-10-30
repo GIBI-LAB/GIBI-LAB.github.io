@@ -2,45 +2,142 @@
   font-family: "MiSans Lab";
   src: local("MiSans VF"), url("fonts/MiSansVF.ttf") format("truetype");
   font-style: normal;
-  font-weight: 100 900;
+  font-weight: 150 700;
   font-display: swap;
 }
-/* Site layout on top of Quarto's native Bootswatch Lux theme. */
-:root{--lab-ink:#1a1a1a;--lab-muted:#626262;--lab-line:#e5e5e5}
-body{font-family:"MiSans Lab",system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.8;color:#454545}
-.navbar>.container-fluid{max-width:1160px;margin:auto}
-.navbar-brand{letter-spacing:.16em}
-.navbar-nav .nav-link{font-size:.82rem}
-#quarto-content{max-width:1120px;margin-inline:auto}
-main{padding-top:2.8rem;min-width:0}
-h2{border-bottom:0;margin-top:3rem;margin-bottom:1.3rem}
-a{text-underline-offset:4px}
-body:has(.lab-intro) #title-block-header{display:none}
-.lab-intro{display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:3.5rem;align-items:start;padding:1.2rem 0 3rem;border-bottom:1px solid var(--lab-line);margin-bottom:2rem}
-.lab-bio,.lab-portrait,.chapter{min-width:0}
-.lab-intro h1{font-size:clamp(2.2rem,5vw,3.8rem);letter-spacing:.12em;margin:0 0 1.2rem;line-height:1.2}
-.lab-intro h1 strong{font-weight:inherit}
-.lab-subtitle{color:var(--lab-ink);font-size:.95rem;letter-spacing:.06em;margin-bottom:1.5rem}
-.lab-intro .placeholder{border:0;background:transparent;padding:0;margin:1.5rem 0}
-.lab-intro .placeholder strong{font-size:.8rem;color:var(--lab-muted)}
-.lab-portrait img{display:block;width:100%;height:auto}
-.lab-portrait p:last-child{font-size:.73rem;color:var(--lab-muted);margin-top:.8rem}
-.lab-links{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;font-size:.8rem;margin-top:1.5rem}
-.lab-links p{display:contents}
-.eyebrow{font-size:.75rem;letter-spacing:.12em;color:var(--lab-muted)}
-.placeholder{display:block;opacity:1;cursor:auto;min-height:0;vertical-align:baseline;background:#f7f7f7;border-left:2px solid #1a1a1a;padding:1rem 1.3rem;margin:1.2rem 0;color:var(--lab-muted)}
-.placeholder p:last-child{margin-bottom:0}
-.chapter-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.3rem;margin:1.4rem 0 2.5rem}
-.chapter{border:1px solid var(--lab-line);border-top:3px solid var(--lab-ink);padding:1.6rem 1.3rem;transition:border-color .15s,transform .15s}
-.chapter:hover{border-color:#1a1a1a;transform:translateY(-2px)}
-.chapter-link{font-size:.9rem;letter-spacing:.06em;font-weight:600;text-decoration:none}
-.chapter p{font-size:.83rem;margin-bottom:0}.chapter p+p{margin-top:.8rem;color:var(--lab-muted)}
-.content-maintenance{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--lab-line);font-size:.75rem}
-.nav-footer{border-top:1px solid var(--lab-line);margin-top:3rem;font-size:.75rem}
-main p,main a,main li{overflow-wrap:anywhere}img,svg{max-width:100%}
-a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offset:4px}
-h1,h2,h3,h4,h5,h6,button,input,select,textarea,.navbar{font-family:inherit}
-html[lang^="zh"] h1,html[lang^="zh"] h2,html[lang^="zh"] h3{letter-spacing:.08em}
-@media(max-width:767px){main{padding-top:1.5rem}.lab-intro{grid-template-columns:minmax(0,1fr);gap:1rem;padding:1rem 0 2rem}.lab-portrait{display:none}.chapter-grid{grid-template-columns:minmax(0,1fr);gap:1rem}.chapter{padding:1.2rem}.lab-subtitle{letter-spacing:.02em}h2{margin-top:2rem}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation:none!important;transition:none!important}.chapter:hover{transform:none}}
-@media print{.navbar,.nav-footer,.content-maintenance,#quarto-back-to-top{display:none!important}.lab-intro{padding:0;border:0}.chapter-grid{display:block}.chapter{break-inside:avoid}a{color:black}}
+
+/* MiSans typography system over the Lux theme.
+   Native MiSans VF axis: Regular 330; Medium 380; Demibold 450; Semibold 520.
+   Body 330; navigation 380; section titles 450; display 250 / 520.
+   Do not inherit Lux's 200-weight body, 1px tracking or forced capitals. */
+:root {
+  font-size: 16px;
+  --lab-font: "MiSans Lab", system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  --lab-ink: #222426;
+  --lab-body: #41464b;
+  --lab-muted: #656b70;
+  --lab-line: #e1e4e6;
+  --lab-small: .8125rem;
+  --bs-body-font-family: var(--lab-font);
+  --bs-body-font-weight: 330;
+}
+body {
+  font-family: var(--lab-font);
+  font-size: 1.0625rem;
+  font-weight: 330;
+  line-height: 1.85;
+  letter-spacing: 0;
+  color: var(--lab-body);
+  font-kerning: normal;
+}
+html[lang^="en"] body { line-height: 1.75; }
+h1,h2,h3,h4,h5,h6,button,input,select,textarea,.navbar { font-family: var(--lab-font); }
+h1,h2,h3,h4,h5,h6 {
+  color: var(--lab-ink);
+  font-weight: 450;
+  text-transform: none;
+  letter-spacing: -.02em;
+  line-height: 1.35;
+  text-wrap: balance;
+}
+h1 { font-size: clamp(2rem, 3.6vw, 2.75rem); font-weight: 520; }
+h2 { font-size: 1.625rem; margin-top: 3.5rem; margin-bottom: 1.25rem; border-bottom: 0; }
+h3 { font-size: 1.1875rem; margin-top: 2rem; }
+html[lang^="zh"] h1,html[lang^="zh"] h2,html[lang^="zh"] h3 { letter-spacing: .015em; }
+strong,b { font-weight: 520; }
+main p { margin-bottom: 1.2em; }
+a { text-underline-offset: .24em; text-decoration-thickness: 1px; }
+main p,main a,main li { overflow-wrap: break-word; }
+img,svg { max-width: 100%; }
+
+/* Navigation is deliberately quieter than the reading area. */
+.navbar { padding-block: 1rem; }
+.navbar>.container-fluid { max-width: 1160px; margin: auto; }
+.navbar-brand { font-size: 1.125rem; font-weight: 520; letter-spacing: .09em; }
+.navbar-nav .nav-link {
+  font-size: .90625rem; font-weight: 380; line-height: 1.6;
+  letter-spacing: .025em; text-transform: none;
+}
+.navbar-nav .nav-link.active { font-weight: 520; }
+.dropdown-menu { font-size: .90625rem; font-weight: 330; letter-spacing: 0; text-transform: none; }
+.dropdown-item { padding-block: .65rem; }
+#quarto-content { max-width: 1160px; margin-inline: auto; }
+main { padding-top: 3rem; min-width: 0; }
+#title-block-header { margin-bottom: 2.5rem; }
+#title-block-header .subtitle { font-size: 1rem; font-weight: 330; color: var(--lab-muted); margin-top: .75rem; letter-spacing: 0; }
+
+/* The wordmark uses two real variable-font weights, not extra letter spacing. */
+body:has(.lab-intro) #title-block-header { display: none; }
+.lab-intro {
+  display: grid; grid-template-columns: minmax(0,1fr) 190px; gap: 3.5rem;
+  align-items: start; padding: .75rem 0 3rem;
+  border-bottom: 1px solid var(--lab-line); margin-bottom: 1rem;
+}
+.lab-bio,.lab-portrait,.chapter { min-width: 0; }
+.lab-intro h1 {
+  font-size: clamp(3rem, 5.4vw, 4.75rem);
+  font-weight: 250; letter-spacing: -.045em;
+  line-height: 1.08; margin: 0 0 1.2rem;
+}
+html[lang^="zh"] .lab-intro h1 { letter-spacing: -.045em; }
+.lab-intro h1 strong { font-weight: 520; }
+.lab-subtitle {
+  color: var(--lab-muted); font-size: .875rem; font-weight: 380;
+  line-height: 1.7; letter-spacing: .025em; margin-bottom: 2rem;
+}
+.lab-subtitle p { margin: 0; }
+.lab-bio>p { max-width: 38em; }
+.lab-bio>p strong { font-weight: 450; color: var(--lab-ink); }
+.lab-bio>p+p { margin-top: 1.5rem; }
+.lab-portrait { padding-top: .55rem; }
+.lab-portrait img { display: block; width: 100%; height: auto; }
+.lab-portrait p:last-child { font-size: .75rem; line-height: 1.65; font-weight: 330; color: var(--lab-muted); margin-top: .8rem; }
+.lab-links { display: flex; flex-wrap: wrap; gap: .7rem 1.6rem; font-size: .875rem; font-weight: 380; line-height: 1.6; margin-top: 1.9rem; }
+.lab-links p { display: contents; }
+.eyebrow { font-size: .75rem; font-weight: 380; letter-spacing: .07em; color: var(--lab-muted); }
+
+/* Empty states and project labels remain readable without competing with headings. */
+.placeholder {
+  display: block; opacity: 1; cursor: auto; min-height: 0; vertical-align: baseline;
+  background: #f8f9f9; border-left: 1px solid #b9bec1;
+  padding: 1.1rem 1.4rem; margin: 1.2rem 0;
+  font-size: .9375rem; line-height: 1.85; font-weight: 330; color: var(--lab-muted);
+}
+.placeholder strong { font-weight: 450; color: #4b5156; }
+.placeholder p:last-child { margin-bottom: 0; }
+.chapter-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1.3rem; margin: 1.4rem 0 2.5rem; }
+.chapter { border: 1px solid var(--lab-line); border-top: 2px solid var(--lab-ink); padding: 1.5rem 1.2rem; }
+.chapter:hover { border-color: #7d858b; }
+.chapter-link { font-size: 1.0625rem; line-height: 1.5; letter-spacing: -.01em; font-weight: 450; text-decoration: none; }
+html[lang^="zh"] .chapter-link { letter-spacing: .02em; }
+.chapter p { font-size: .875rem; margin-bottom: 0; }
+.chapter p+p { margin-top: .8rem; color: var(--lab-muted); }
+.content-maintenance { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--lab-line); font-size: var(--lab-small); font-weight: 330; color: var(--lab-muted); }
+.nav-footer { border-top: 1px solid var(--lab-line); margin-top: 3rem; font-size: .75rem; font-weight: 330; line-height: 1.7; letter-spacing: .01em; color: var(--lab-muted); }
+a:focus-visible,button:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+
+@media(max-width:767px) {
+  body { font-size: 1rem; line-height: 1.85; }
+  main { padding-top: 1.8rem; }
+  .navbar { padding-block: .7rem; }
+  .lab-intro { grid-template-columns: minmax(0,1fr); gap: 1rem; padding: .5rem 0 2rem; }
+  .lab-intro h1 { font-size: clamp(2.75rem, 11vw, 3.5rem); }
+  .lab-portrait { display: none; }
+  .lab-subtitle { font-size: .8125rem; letter-spacing: 0; margin-bottom: 1.6rem; }
+  .lab-links { gap: .75rem 1.25rem; }
+  .chapter-grid { grid-template-columns: minmax(0,1fr); gap: 1rem; }
+  .chapter { padding: 1.2rem; }
+  h2 { font-size: 1.375rem; margin-top: 2.5rem; }
+  .placeholder { padding: 1rem 1.1rem; }
+}
+@media(prefers-reduced-motion:reduce) {
+  html { scroll-behavior: auto!important; }
+  *,*::before,*::after { animation: none!important; transition: none!important; }
+}
+@media print {
+  .navbar,.nav-footer,.content-maintenance,#quarto-back-to-top { display: none!important; }
+  .lab-intro { padding: 0; border: 0; }
+  .chapter-grid { display: block; }
+  .chapter { break-inside: avoid; }
+  a { color: black; }
+}

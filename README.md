@@ -85,3 +85,7 @@ python3 -m http.server 8000 --directory _site
 ## 字体
 
 中英文页面使用小米 MiSans 可变字体，并在加载时回退到系统字体。字体文件来自原始 MiSans 字体，未做子集化或修改。使用条款与版权归属见 https://hyperos.mi.com/font/zh/download/ 。字体资源约 19 MB，首次访问可能较慢；浏览器通常会缓存。
+
+## 字体层级与排版
+
+MiSans 的字重与字距在 `styles.css` 统一维护，不继承 Lux 的极细正文与强制大写。依据此版 MiSans VF 的实际字重轴（150–700）：正文 Regular 330、导航 Medium 380、栏目标题 Demibold 450、首页字标 250 / 520；中英文各自设置行高与字距。默认正文 17px，窄屏 16px；小字号仅用于注释和页脚。保持浏览器缩放可用，新增文字无需手工换行。

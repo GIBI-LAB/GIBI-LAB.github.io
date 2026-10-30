@@ -1,6 +1,3 @@
-::: {.placeholder}
-**Lab introduction coming soon**
+We are a research group at the School of Intelligent Image Engineering, Beijing Film Academy. Our work lies at the intersection of **Spatial Imaging**, **Color Science**, and **Imaging Evaluation**, bridging imaging technologies, computational methods, and human visual perception. Rooted in extensive hands-on experience in film and television production, our research is driven by both fundamental scientific questions and real-world challenges in cinematic imaging.
 
-The formal lab name, institutional affiliation, research vision, and contact email are awaiting confirmation. This website currently uses the GitHub organization name GIBI-LAB as its display name.
-:::
-
+Our mission is twofold: to understand the fundamental principles of how images are formed and perceived, and to develop new imaging systems and methods that push the boundaries of what we can capture, reproduce, and evaluate.

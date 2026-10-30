@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "MiSans Lab";
-  src: local("MiSans VF"), url("fonts/MiSansVF.ttf") format("truetype");
+  font-family: "MiSans";
+  src: url("fonts/MiSansVF.ttf") format("truetype");
   font-style: normal;
   font-weight: 150 700;
   font-display: swap;
@@ -8,11 +8,12 @@
 
 /* MiSans typography system over the Lux theme.
    Native MiSans VF axis: Regular 330; Medium 380; Demibold 450; Semibold 520.
-   Body 330; navigation 380; section titles 450; display 250 / 520.
+   Body 330; navigation 380; section titles 450; display 380.
+   Use natural spacing and the same MiSans face for every text role.
    Do not inherit Lux's 200-weight body, 1px tracking or forced capitals. */
 :root {
   font-size: 16px;
-  --lab-font: "MiSans Lab", system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  --lab-font: "MiSans", system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
   --lab-ink: #222426;
   --lab-body: #41464b;
   --lab-muted: #656b70;
@@ -26,7 +27,7 @@ body {
   font-size: 1.0625rem;
   font-weight: 330;
   line-height: 1.85;
-  letter-spacing: 0;
+  letter-spacing: normal;
   color: var(--lab-body);
   font-kerning: normal;
 }
@@ -36,15 +37,15 @@ h1,h2,h3,h4,h5,h6 {
   color: var(--lab-ink);
   font-weight: 450;
   text-transform: none;
-  letter-spacing: -.02em;
+  letter-spacing: normal;
   line-height: 1.35;
   text-wrap: balance;
 }
 h1 { font-size: clamp(2rem, 3.6vw, 2.75rem); font-weight: 520; }
 h2 { font-size: 1.625rem; margin-top: 3.5rem; margin-bottom: 1.25rem; border-bottom: 0; }
 h3 { font-size: 1.1875rem; margin-top: 2rem; }
-html[lang^="zh"] h1,html[lang^="zh"] h2,html[lang^="zh"] h3 { letter-spacing: .015em; }
-strong,b { font-weight: 520; }
+html[lang^="zh"] h1,html[lang^="zh"] h2,html[lang^="zh"] h3 { letter-spacing: normal; }
+strong,b { font-weight: 450; }
 main p { margin-bottom: 1.2em; }
 a { text-underline-offset: .24em; text-decoration-thickness: 1px; }
 main p,main a,main li { overflow-wrap: break-word; }
@@ -53,20 +54,20 @@ img,svg { max-width: 100%; }
 /* Navigation is deliberately quieter than the reading area. */
 .navbar { padding-block: 1rem; }
 .navbar>.container-fluid { max-width: 1160px; margin: auto; }
-.navbar-brand { font-size: 1.125rem; font-weight: 520; letter-spacing: .09em; }
+.navbar-brand { font-size: 1.125rem; font-weight: 520; letter-spacing: normal; }
 .navbar-nav .nav-link {
   font-size: .90625rem; font-weight: 380; line-height: 1.6;
-  letter-spacing: .025em; text-transform: none;
+  letter-spacing: normal; text-transform: none;
 }
 .navbar-nav .nav-link.active { font-weight: 520; }
-.dropdown-menu { font-size: .90625rem; font-weight: 330; letter-spacing: 0; text-transform: none; }
+.dropdown-menu { font-size: .90625rem; font-weight: 330; letter-spacing: normal; text-transform: none; }
 .dropdown-item { padding-block: .65rem; }
 #quarto-content { max-width: 1160px; margin-inline: auto; }
 main { padding-top: 3rem; min-width: 0; }
 #title-block-header { margin-bottom: 2.5rem; }
-#title-block-header .subtitle { font-size: 1rem; font-weight: 330; color: var(--lab-muted); margin-top: .75rem; letter-spacing: 0; }
+#title-block-header .subtitle { font-size: 1rem; font-weight: 330; color: var(--lab-muted); margin-top: .75rem; letter-spacing: normal; }
 
-/* The wordmark uses two real variable-font weights, not extra letter spacing. */
+/* Keep the wordmark in MiSans, with natural spacing and a uniform Medium weight. */
 body:has(.lab-intro) #title-block-header { display: none; }
 .lab-intro {
   display: grid; grid-template-columns: minmax(0,1fr) 190px; gap: 3.5rem;
@@ -76,14 +77,14 @@ body:has(.lab-intro) #title-block-header { display: none; }
 .lab-bio,.lab-portrait,.chapter { min-width: 0; }
 .lab-intro h1 {
   font-size: clamp(3rem, 5.4vw, 4.75rem);
-  font-weight: 250; letter-spacing: -.045em;
+  font-weight: 380; letter-spacing: normal;
   line-height: 1.08; margin: 0 0 1.2rem;
 }
-html[lang^="zh"] .lab-intro h1 { letter-spacing: -.045em; }
-.lab-intro h1 strong { font-weight: 520; }
+html[lang^="zh"] .lab-intro h1 { letter-spacing: normal; }
+.lab-intro h1 strong { font-weight: inherit; }
 .lab-subtitle {
   color: var(--lab-muted); font-size: .875rem; font-weight: 380;
-  line-height: 1.7; letter-spacing: .025em; margin-bottom: 2rem;
+  line-height: 1.7; letter-spacing: normal; margin-bottom: 2rem;
 }
 .lab-subtitle p { margin: 0; }
 .lab-bio>p { max-width: 38em; }
@@ -94,7 +95,7 @@ html[lang^="zh"] .lab-intro h1 { letter-spacing: -.045em; }
 .lab-portrait p:last-child { font-size: .75rem; line-height: 1.65; font-weight: 330; color: var(--lab-muted); margin-top: .8rem; }
 .lab-links { display: flex; flex-wrap: wrap; gap: .7rem 1.6rem; font-size: .875rem; font-weight: 380; line-height: 1.6; margin-top: 1.9rem; }
 .lab-links p { display: contents; }
-.eyebrow { font-size: .75rem; font-weight: 380; letter-spacing: .07em; color: var(--lab-muted); }
+.eyebrow { font-size: .75rem; font-weight: 380; letter-spacing: normal; color: var(--lab-muted); }
 
 /* Empty states and project labels remain readable without competing with headings. */
 .placeholder {
@@ -108,12 +109,12 @@ html[lang^="zh"] .lab-intro h1 { letter-spacing: -.045em; }
 .chapter-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1.3rem; margin: 1.4rem 0 2.5rem; }
 .chapter { border: 1px solid var(--lab-line); border-top: 2px solid var(--lab-ink); padding: 1.5rem 1.2rem; }
 .chapter:hover { border-color: #7d858b; }
-.chapter-link { font-size: 1.0625rem; line-height: 1.5; letter-spacing: -.01em; font-weight: 450; text-decoration: none; }
-html[lang^="zh"] .chapter-link { letter-spacing: .02em; }
+.chapter-link { font-size: 1.0625rem; line-height: 1.5; letter-spacing: normal; font-weight: 450; text-decoration: none; }
+html[lang^="zh"] .chapter-link { letter-spacing: normal; }
 .chapter p { font-size: .875rem; margin-bottom: 0; }
 .chapter p+p { margin-top: .8rem; color: var(--lab-muted); }
 .content-maintenance { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--lab-line); font-size: var(--lab-small); font-weight: 330; color: var(--lab-muted); }
-.nav-footer { border-top: 1px solid var(--lab-line); margin-top: 3rem; font-size: .75rem; font-weight: 330; line-height: 1.7; letter-spacing: .01em; color: var(--lab-muted); }
+.nav-footer { border-top: 1px solid var(--lab-line); margin-top: 3rem; font-size: .75rem; font-weight: 330; line-height: 1.7; letter-spacing: normal; color: var(--lab-muted); }
 a:focus-visible,button:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
 
 @media(max-width:767px) {
@@ -123,7 +124,7 @@ a:focus-visible,button:focus-visible { outline: 2px solid currentColor; outline-
   .lab-intro { grid-template-columns: minmax(0,1fr); gap: 1rem; padding: .5rem 0 2rem; }
   .lab-intro h1 { font-size: clamp(2.75rem, 11vw, 3.5rem); }
   .lab-portrait { display: none; }
-  .lab-subtitle { font-size: .8125rem; letter-spacing: 0; margin-bottom: 1.6rem; }
+  .lab-subtitle { font-size: .8125rem; letter-spacing: normal; margin-bottom: 1.6rem; }
   .lab-links { gap: .75rem 1.25rem; }
   .chapter-grid { grid-template-columns: minmax(0,1fr); gap: 1rem; }
   .chapter { padding: 1.2rem; }

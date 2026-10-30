@@ -88,4 +88,6 @@ python3 -m http.server 8000 --directory _site
 
 ## 字体层级与排版
 
-MiSans 的字重与字距在 `styles.css` 统一维护，不继承 Lux 的极细正文与强制大写。依据此版 MiSans VF 的实际字重轴（150–700）：正文 Regular 330、导航 Medium 380、栏目标题 Demibold 450、首页字标 250 / 520；中英文各自设置行高与字距。默认正文 17px，窄屏 16px；小字号仅用于注释和页脚。保持浏览器缩放可用，新增文字无需手工换行。
+MiSans 的字重与字距在 `styles.css` 统一维护，不继承 Lux 的极细正文与强制大写。依据此版 MiSans VF 的实际字重轴（150–700）：正文 Regular 330、导航 Medium 380、栏目标题 Demibold 450、首页字标 Medium 380（统一字重）；中英文各自设置行高，均使用字体自然字距。默认正文 17px，窄屏 16px；小字号仅用于注释和页脚。保持浏览器缩放可用，新增文字无需手工换行。
+
+字体核验：Chrome 的 Rendered fonts 已确认正文实际使用 MiSans VF。CSS 家族名统一为 MiSans，直接加载本站字体文件，避免不同设备上同名字体版本不一致。英文标题不压缩字距，首页字标不再混用悬殊字重。

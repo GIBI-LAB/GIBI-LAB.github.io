@@ -1,6 +1,13 @@
+@font-face {
+  font-family: "MiSans Lab";
+  src: local("MiSans VF"), url("fonts/MiSansVF.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
 /* Site layout on top of Quarto's native Bootswatch Lux theme. */
 :root{--lab-ink:#1a1a1a;--lab-muted:#626262;--lab-line:#e5e5e5}
-body{line-height:1.8;color:#454545}
+body{font-family:"MiSans Lab",system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.8;color:#454545}
 .navbar>.container-fluid{max-width:1160px;margin:auto}
 .navbar-brand{letter-spacing:.16em}
 .navbar-nav .nav-link{font-size:.82rem}
@@ -32,7 +39,7 @@ body:has(.lab-intro) #title-block-header{display:none}
 .nav-footer{border-top:1px solid var(--lab-line);margin-top:3rem;font-size:.75rem}
 main p,main a,main li{overflow-wrap:anywhere}img,svg{max-width:100%}
 a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offset:4px}
-html[lang^="zh"] body{font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+h1,h2,h3,h4,h5,h6,button,input,select,textarea,.navbar{font-family:inherit}
 html[lang^="zh"] h1,html[lang^="zh"] h2,html[lang^="zh"] h3{letter-spacing:.08em}
 @media(max-width:767px){main{padding-top:1.5rem}.lab-intro{grid-template-columns:minmax(0,1fr);gap:1rem;padding:1rem 0 2rem}.lab-portrait{display:none}.chapter-grid{grid-template-columns:minmax(0,1fr);gap:1rem}.chapter{padding:1.2rem}.lab-subtitle{letter-spacing:.02em}h2{margin-top:2rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation:none!important;transition:none!important}.chapter:hover{transform:none}}

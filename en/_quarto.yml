@@ -38,7 +38,7 @@ website:
         href: https://github.com/GIBI-LAB
         aria-label: GitHub organization
   page-footer:
-    left: "GIBI-LAB"
+    left: "GIBI-LAB · MiSans by Xiaomi"
     right: "Website in preparation"
   search: true
 format:

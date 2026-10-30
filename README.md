@@ -81,3 +81,7 @@ python3 -m http.server 8000 --directory _site
 ## 当前视觉风格
 
 中英文站均使用 Quarto 内置的 Bootswatch Lux 主题（`theme: lux`），配深色导航。保留主题自身的字体、标题、按钮和菜单样式；`styles.css` 仅补充课题组布局、中文可读性及响应式样式。参考：https://bootswatch.com/lux/ 。原有 al-folio 风格版本可通过 Git 历史恢复。抽象示意图为本站原创 SVG，并非实验数据。
+
+## 字体
+
+中英文页面使用小米 MiSans 可变字体，并在加载时回退到系统字体。字体文件来自原始 MiSans 字体，未做子集化或修改。使用条款与版权归属见 https://hyperos.mi.com/font/zh/download/ 。字体资源约 19 MB，首次访问可能较慢；浏览器通常会缓存。
